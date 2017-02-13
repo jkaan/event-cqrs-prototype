@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Jk\Cqrs\Domain\Event;
+namespace Jk\Cqrs\Domain\Command;
 
 use Prooph\Common\Messaging\Command;
 
@@ -11,6 +11,7 @@ class CreateUser extends Command
 
     public function __construct(string $username)
     {
+        $this->init();
         $this->username = $username;
     }
 

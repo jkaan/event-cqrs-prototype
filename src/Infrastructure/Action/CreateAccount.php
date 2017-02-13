@@ -7,7 +7,7 @@ use Assert\Assertion;
 use Prooph\ServiceBus\CommandBus;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
-use Jk\Cqrs\Domain\Event\CreateUser;
+use Jk\Cqrs\Domain\Command\CreateUser;
 
 class CreateAccount implements ActionInterface
 {
